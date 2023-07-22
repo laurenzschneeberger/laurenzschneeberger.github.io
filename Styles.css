@@ -1,0 +1,17 @@
+heading {
+    color: #000000;
+    font-family: Chirp;
+    font-size: x-large
+}
+
+bio {
+    color: #000000;
+    font-family: Chirp;
+    font-size: medium
+}
+
+::selection {
+    background: #F9E79F; /* WebKit/Blink Browsers */
+  }
+  
+
