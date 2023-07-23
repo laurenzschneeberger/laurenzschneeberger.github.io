@@ -1,17 +1,54 @@
 heading {
     color: #000000;
-    font-family: Chirp;
+    font-family: Optima;
     font-size: x-large
 }
 
 bio {
     color: #000000;
-    font-family: Chirp;
+    font-family: Optima;
     font-size: medium
+    height:200px;
+    overflow: scroll;
 }
 
+/* text highlight color*/
 ::selection {
-    background: #F9E79F; /* WebKit/Blink Browsers */
+    background: #dcdee0; /* WebKit/Blink Browsers */
+  }
+
+  a, a:visited, a:active {
+    color: #536480;
+    text-decoration: none;
+    border-bottom: 1.5px dotted;
   }
   
+  a:hover {
+    color: #203a47;
+    text-decoration: none;
+    border-bottom: 1.5px dotted;
+  }
+  
+  /* visited link 
+  a:visited {
+    color: #536480;
+    
+  }
+  
+   mouse over link 
+  a:hover {
+    color: #6b99b0;
+  } */
+
+/* frosted glass header */ 
+   .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(4px);
+  }
+
 
