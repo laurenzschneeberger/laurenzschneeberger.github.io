@@ -1,0 +1,31 @@
+heading {
+    color: #fff;
+    font-family: iA Writer Quattro V;
+    font-size: x-large
+}
+
+bio {
+    color: #fff;
+    font-family: iA Writer Quattro V;
+    font-size: medium
+    height: 200px;
+    overflow: scroll;
+}
+
+/* text highlight color*/
+::selection {
+    background: #339966; /* WebKit/Blink Browsers */
+  }
+
+  a, a:visited, a:active {
+    color: #5c6161;
+    text-decoration: none;
+    border-bottom: 1.5px dotted;
+  }
+  
+  a:hover {
+    color: #339966;
+    text-decoration: none;
+    border-bottom: 1.5px dotted;
+  }
+
