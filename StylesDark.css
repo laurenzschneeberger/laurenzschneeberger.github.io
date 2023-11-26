@@ -12,20 +12,4 @@ bio {
     overflow: scroll;
 }
 
-/* text highlight color*/
-::selection {
-    background: #339966; /* WebKit/Blink Browsers */
-  }
-
-  a, a:visited, a:active {
-    color: #7a8282;
-    text-decoration: none;
-    border-bottom: 1.5px dotted;
-  }
-  
-  a:hover {
-    color: #339966;
-    text-decoration: none;
-    border-bottom: 1.5px dotted;
-  }
 
