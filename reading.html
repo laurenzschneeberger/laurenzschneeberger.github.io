@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Nto  Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Noto  Sans', -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         :root {
@@ -38,6 +38,29 @@
                 color: var(--text-light);
             }
         }
+
+        .author {
+            color: #888888;
+            /* Gray color for dark mode */
+            font-weight: 300;
+            /* Slightly lighter weight */
+            margin-left: 6px;
+            /* Small space between title and author */
+            text-decoration: none;
+            /* Remove underline */
+            display: inline-block;
+            /* Helps with text-decoration handling */
+        }
+
+        /* Adjust color for light mode */
+        @media (prefers-color-scheme: light) {
+            .author {
+                color: #666666;
+                /* Darker gray for light mode for better contrast */
+            }
+        }
+
+
 
         /* Navigation */
         .nav {
@@ -71,6 +94,18 @@
         .nav-item:hover {
             border-color: currentColor;
         }
+
+        ul {
+            list-style-type: none;
+            /* Removes bullet points */
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            /* Add some spacing between list items */
+        }
+
 
         .content {
             flex: 1;
@@ -130,24 +165,27 @@
 
 <body>
     <nav class="nav">
-        <a href="index.html" class="nav-item active">Home</a>
-        <a href="reading.html" class="nav-item">Reading</a>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="reading.html" class="nav-item active">Reading</a>
     </nav>
 
     <div class="content">
         <p>
-            Hi, I'm Laurenz. I was born in Mountain View and live in Switzerland.
+            Here's a list of my favorite writing on the web.
         </p>
-        <p>
-            I am an economics undergraduate student at the University of St. Gallen. I've spent some time studying
-            mathematics at USC, building the student-run investment fund at the University of St. Gallen, and interning
-            at Société Générale.
-        </p>
-        <p>
-            Right now, I'm interested in statistics, computational science, business models, and
-            writing. Reach out on <a href="https://twitter.com/naiveliquid">X</a>, or read my <a
-                href="https://naiveliquid.substack.com/">writing</a>.
-        </p>
+        <ul>
+            <li><a href="https://stephango.com/style">Style is Consistent Constraint</a> <span class="author">Steph
+                    Ango</span>
+            </li>
+            <li><a href="https://nabeelqu.substack.com/p/understanding">How to Understand Things</a> <span
+                    class="author">Nabeel
+                    Qureshi</span></li>
+            <li><a href="https://example.com/article3">95%-ile isn't that good</a> <span class="author">Dan Luu</span>
+            </li>
+        </ul>
+
+
+
     </div>
 </body>
 
